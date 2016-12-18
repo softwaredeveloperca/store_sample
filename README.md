@@ -1,4 +1,6 @@
-** Create API Token **
+<h2>symfony 3 Sample REST API using FOSJsRoutingBundle<h2><br><br>
+
+* ** Create API Token **
 ----
   Returns api troken
 
@@ -31,8 +33,8 @@
 
 
 
-
-** Get Products **
+<br>
+* ** Get Products **
 ----
   Returns json data about a single user.
 
@@ -64,7 +66,8 @@
   * **Code:** 404 NOT FOUND <br />
 
  
- ** Create Product **
+ <br>
+ * ** Create Product **
 ----
   Returns json data about a single user.
 
@@ -104,14 +107,14 @@
 * **Error Response:**
 
   * **Code:** 404 NOT FOUND <br />
-  
+  <br><br><br>
   
   
   See ProductsController for all methods:
   
-    **list all products**
-    **list all categories**
-    **retrieve a single product**
-    **create a product**
-    **update a product**
-    **delete a product**
+    **<li>list all products</li>**
+    **<li>list all categories</li>**
+    **<li>retrieve a single product</li>**
+    **<li>create a product</li>**
+    **<li>update a product</li>**
+    **<li>delete a product</li>**
