@@ -25,7 +25,7 @@ class ProductsControllerTest extends WebTestCase
         $this->assertEquals(204, $client->getResponse()->getStatusCode());
 		
 		
-		$crawler = $client->request('POST', '/users', array('email'  => 'test@test.com'));
+		$crawler = $client->request('POST', '/users', array('email'  => 'bobby@foo.com'));
 
 		
 	
