@@ -1,0 +1,6 @@
+users:
+    type:     rest
+    resource: "@AppBundle/Controller/UsersController.php"
+products:
+    type:     rest
+    resource: "@AppBundle/Controller/ProductsController.php"
