@@ -1,10 +1,11 @@
-<h2>symfony 3 Sample REST API using FOSJsRoutingBundle<h2><br><br>
+* **symfony 3 Sample REST API using FOSJsRoutingBundle**
+<br><br>
 
-<p>
+
 * **Installing** 
 
-CREATE DATABASE store;
-I
+CREATE DATABASE store;<br><br>
+
 insert into users (name, email, createdAt, updatedAt) VALUES ('Bobby Fischer', 'bobby@foo.com', now(), now());<br>
 insert into users (name, email, createdAt, updatedAt) VALUES ('Betty Rubble', 'betty@foo.com', now(), now());<br>
 
@@ -14,7 +15,7 @@ insert into products (name, category, sku, price, quantity, createdAt, updatedAt
 
 insert into products (name, category, sku, price, quantity, createdAt, updatedAt) VALUES ('AP Oman PC - Aluminum', 'Computers', 'A0003', 1399.99, 10, now(), now());<br>
 insert into products (name, category, sku, price, quantity, createdAt, updatedAt) VALUES ('Fony UHD HDR 55', 'Games', 'A0004', '1399.99', 5, now(), now());<br><br><hr>
-</p>
+
 * ** Create API Token **
 ----
   Returns api troken
