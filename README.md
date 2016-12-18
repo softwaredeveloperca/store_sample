@@ -1,8 +1,8 @@
-* **symfony 3 Sample REST API using FOSJsRoutingBundle**
+**Symfony 3 Sample REST API using FOSJsRoutingBundle**
 <br><br>
 
 
-* **Installing** 
+**Installing** 
 
 CREATE DATABASE store;<br><br>
 
