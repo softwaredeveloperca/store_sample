@@ -1,69 +1,117 @@
-Symfony Standard Edition
-========================
+** Create API Token **
+----
+  Returns api troken
 
-Welcome to the Symfony Standard Edition - a fully-functional Symfony
-application that you can use as the skeleton for your new applications.
+* **URL**
 
-For details on how to download and get started with Symfony, see the
-[Installation][1] chapter of the Symfony Documentation.
+  /users
 
-What's inside?
---------------
+* **Method:**
 
-The Symfony Standard Edition is configured with the following defaults:
+  `POST`
+  
 
-  * An AppBundle you can use to start coding;
+   **Required:**
+   
+  @email:  @STRING
 
-  * Twig as the only configured template engine;
 
-  * Doctrine ORM/DBAL;
+* **Data Params**
 
-  * Swiftmailer;
+  @email:  @STRING
 
-  * Annotations enabled for everything.
+* **Success Response:**
 
-It comes pre-configured with the following bundles:
+  * **Code:** 200 <br />
+    **Content:** `[{"token":'sd3fF4f'}]`
+ 
+* **Error Response:**
 
-  * **FrameworkBundle** - The core Symfony framework bundle
+  * **Code:** 404 NOT FOUND <br />
 
-  * [**SensioFrameworkExtraBundle**][6] - Adds several enhancements, including
-    template and routing annotation capability
 
-  * [**DoctrineBundle**][7] - Adds support for the Doctrine ORM
 
-  * [**TwigBundle**][8] - Adds support for the Twig templating engine
 
-  * [**SecurityBundle**][9] - Adds security by integrating Symfony's security
-    component
+** Get Products **
+----
+  Returns json data about a single user.
 
-  * [**SwiftmailerBundle**][10] - Adds support for Swiftmailer, a library for
-    sending emails
+* **URL**
 
-  * [**MonologBundle**][11] - Adds support for Monolog, a logging library
+  /products
 
-  * **WebProfilerBundle** (in dev/test env) - Adds profiling functionality and
-    the web debug toolbar
+* **Method:**
 
-  * **SensioDistributionBundle** (in dev/test env) - Adds functionality for
-    configuring and working with Symfony distributions
+  `GET`
+  
+*  **URL Params**
 
-  * [**SensioGeneratorBundle**][13] (in dev/test env) - Adds code generation
-    capabilities
+   **Required:**
+ 
+  None
 
-  * **DebugBundle** (in dev/test env) - Adds Debug and VarDumper component
-    integration
+* **Data Params**
 
-All libraries and bundles included in the Symfony Standard Edition are
-released under the MIT or BSD license.
+  None
 
-Enjoy!
+* **Success Response:**
 
-[1]:  https://symfony.com/doc/3.2/setup.html
-[6]:  https://symfony.com/doc/current/bundles/SensioFrameworkExtraBundle/index.html
-[7]:  https://symfony.com/doc/3.2/doctrine.html
-[8]:  https://symfony.com/doc/3.2/templating.html
-[9]:  https://symfony.com/doc/3.2/security.html
-[10]: https://symfony.com/doc/3.2/email.html
-[11]: https://symfony.com/doc/3.2/logging.html
-[12]: https://symfony.com/doc/3.2/assetic/asset_management.html
-[13]: https://symfony.com/doc/current/bundles/SensioGeneratorBundle/index.html
+  * **Code:** 200 <br />
+    **Content:** `[{"id":5,"name":"test product","category":"hats","sku":"34525663","price":1234.45,"quantity":20,"created_at":"2016-12-18T00:00:00-0500","updated_at":"2016-12-18T00:00:00-0500"}`
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+
+ 
+ ** Create Product **
+----
+  Returns json data about a single user.
+
+* **URL**
+
+  /products
+
+* **Method:**
+
+  `POST`
+  
+*  **URL Params**
+
+   **Required:**
+ 
+ 'name'  
+	'category' 
+	'sku'
+	'price'      
+	'quantity'  
+	'apikey'     
+
+* **Data Params**
+
+  'name'  
+	'category' 
+	'sku'
+	'price'      
+	'quantity'  
+	'apikey'
+
+* **Success Response:**
+
+  * **Code:** 200 <br />
+
+ 
+* **Error Response:**
+
+  * **Code:** 404 NOT FOUND <br />
+  
+  
+  
+  See ProductsController for all methods:
+  
+    **list all products**
+    **list all categories**
+    **retrieve a single product**
+    **create a product**
+    **update a product**
+    **delete a product**
